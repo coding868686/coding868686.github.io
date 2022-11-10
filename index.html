@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html>
 <body>
-<div class="rendered-form">
-    <div class="formbuilder-number form-group field-number-1668100838648">
-        <label for="number-1668100838648" class="formbuilder-number-label">Floor
-            <br>
-        </label>
-        <input type="number" class="form-control" name="number-1668100838648" access="false" min="1" max="34" step="1" id="number-1668100838648">
-    </div>
-    <div class="formbuilder-number form-group field-number-1668100839082">
-        <label for="number-1668100839082" class="formbuilder-number-label">Block
-            <br>
-        </label>
-        <input type="number" class="form-control" name="number-1668100839082" access="false" min="1" max="14" step="1" id="number-1668100839082">
-    </div>
-    <div class="formbuilder-select form-group field-select-1668100848904">
-        <label for="select-1668100848904" class="formbuilder-select-label">Flat</label>
-        <select class="form-control" name="select-1668100848904" id="select-1668100848904">
-            <option value="A" selected="true" id="select-1668100848904-0">A</option>
-            <option value="B" id="select-1668100848904-1">B</option>
-            <option value="C" id="select-1668100848904-2">C</option>
-            <option value="D" id="select-1668100848904-3">D</option>
-            <option value="E" id="select-1668100848904-4">E</option>
-            <option value="F" id="select-1668100848904-5">F</option>
-            <option value="G" id="select-1668100848904-6">G</option>
-            <option value="H" id="select-1668100848904-7">H</option>
-        </select>
-    </div>
-    <div class="formbuilder-button form-group field-submit">
-        <button type="submit" class="btn-default btn" name="submit" access="false" style="default" id="submit">Submit</button>
-    </div>
+<form>
+        Flat: <select id="flat_sel">
+                        <option value="null">Please Choose One...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+  <option value="F">F</option>
+  <option value="G">G</option>
+  <option value="G">H</option>
+  
+                        </select></br>
+         Block: <select id="block_sel">
+                        <option value="null">Please Choose One...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  </select></br>
+        Floor <input type="number" id="floor_sel" /></br>
+  
+        <button type="button" onclick="calcfn()">Click me</button>
+    </form>
+<p id="output1"></p>
+<p id="output2"></p>
+    <script src="papaparse.js">
+      </script>
 </div>
 </body>
 </html>
