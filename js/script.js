@@ -1910,7 +1910,7 @@ License: MIT
  
      
     
-    parseData("https://raw.githubusercontent.com/coding868686/coding868686.github.io/main/flat_values.csv",doStuff);
+    parseData("https://raw.githubusercontent.com/coding868686/csvstore/main/flat_values2.csv",doStuff);
     
 }
 function parseData(url,callBack){
