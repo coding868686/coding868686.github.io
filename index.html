@@ -2,7 +2,44 @@
 <html>
 <body>
 
-<form>
+<style>
+#form1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+
+    }
+
+}
+#formdiv{
+    
+    background-color: black;
+    
+}
+#outputdiv{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+#flat_sel{
+    font-size: 20px;
+}
+#block_sel{
+    font-size: 20px;
+}
+#floor_sel{
+    font-size: 20px;
+}
+#getvalues{
+    font-size: 20px;
+}
+body{
+    background-color: black;
+}
+
+</style>
+<div id="formdiv">
+<form id="form1">
         Flat: <select id="flat_sel">
                         <option value="null">Please Choose One...</option>
                         <option value="A">A</option>
@@ -30,13 +67,17 @@
   <option value="11">11</option>
   <option value="12">12</option>
   </select></br>
-        Floor <input type="number" id="floor_sel" /></br>
+        Floor: <input type="number" id="floor_sel" min="1" max="34" /></br>
   
-        <button type="button" onclick="calcfn()">Click me</button>
+        <button type="button" onclick="calcfn()" id="getvalues">Get Values</button>
     </form>
+    </div>
+<div id="outputdiv">
 <p id="output1"></p>
 <p id="output2"></p>
-<script src="js/script.js"></script>   
 </div>
+    <script src="js/script.js">
+      </script>
+
 </body>
 </html>
